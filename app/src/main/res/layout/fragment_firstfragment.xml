@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tv1"
+        android:textSize="30sp"
         android:text="@string/first" />
 
 </LinearLayout>

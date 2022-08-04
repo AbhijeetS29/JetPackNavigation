@@ -32,9 +32,10 @@ class Firstfragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-            mainActivity=activity as MainActivity
+
 
         }
+        mainActivity=activity as MainActivity
     }
 
     override fun onCreateView(
@@ -52,7 +53,7 @@ class Firstfragment : Fragment() {
             var bundle=Bundle()
             bundle.putString("hello","firstFragment")
             bundle.putString("hey","second_Fragment using navigation")
-            mainActivity.navController.navigate(R.id.action_firstfragment_to_blankFragment2)
+            mainActivity.navController.navigate(R.id.action_firstfragment_to_blankFragment2,bundle)
 
         }
     }
