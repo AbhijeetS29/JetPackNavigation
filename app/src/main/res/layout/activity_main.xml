@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <fragment
-
-        android:id="@+id/navController"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:defaultNavHost="true"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        app:navGraph="@navigation/nav_graph"
-         />
+        android:background="@color/purple_200">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ajhvd"/><com.google.android.material.tabs.TabItem
+        android:id="@+id/iswt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ajhvd"/><com.google.android.material.tabs.TabItem
+        android:id="@+id/bist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ajhvd"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+
 
 </LinearLayout>
